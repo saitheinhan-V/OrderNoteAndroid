@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        tools:layout="@layout/fragment_home"
+        android:name="com.note.order.ui.home.HomeFragment"
+        />
+
+    <fragment
+        android:id="@+id/customerListFragment"
+        tools:layout="@layout/fragment_home"
+        android:name="com.note.order.ui.home.CustomerListFragment"
+        />
+
+    <fragment
+        android:id="@+id/paymentCheckFragment"
+        tools:layout="@layout/fragment_home"
+        android:name="com.note.order.ui.home.PaymentCheckFragment"
+        />
+
+    <fragment
+        android:id="@+id/cashBookFragment"
+        tools:layout="@layout/fragment_home"
+        android:name="com.note.order.ui.home.CashBookFragment"
+        />
+
+    <fragment
+        android:id="@+id/setupFragment"
+        tools:layout="@layout/fragment_home"
+        android:name="com.note.order.ui.home.SetupFragment"
+        />
+
+
+</navigation>

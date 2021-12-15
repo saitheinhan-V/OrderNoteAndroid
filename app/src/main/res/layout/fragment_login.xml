@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.account.LoginFragment"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="100dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:elevation="7dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/gap_80"
+                android:layout_height="@dimen/gap_80"
+                android:src="@mipmap/ic_main_logo"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_50"
+            android:layout_marginHorizontal="@dimen/gap_20"
+            android:elevation="7dp"
+            android:layout_marginTop="@dimen/gap_20"
+            android:layout_below="@+id/cardView"
+            >
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Log in"
+                android:background="@drawable/button_enabled"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/gap_20"
+            app:cardCornerRadius="@dimen/gap_5"
+            app:cardElevation="5dp"
+            android:outlineAmbientShadowColor="@color/colorGray"
+            android:layout_marginTop="@dimen/gap_45"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/gap_10"
+                android:paddingTop="@dimen/gap_25"
+                android:layout_marginVertical="@dimen/gap_15">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/phoneTxtInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/TextInputLayoutStyle"
+                    android:paddingVertical="@dimen/padding_5dp"
+                    android:backgroundTint="@color/transparent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gap_55"
+                        android:hint="Phone Number"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_16"
+                        android:imeOptions="actionDone"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/passwordTxtInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/TextInputLayoutStyle"
+                    android:paddingVertical="@dimen/padding_5dp"
+                    android:backgroundTint="@color/transparent"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gap_55"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_size_16"
+                        android:imeOptions="actionDone"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/forgotPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/gap_16"
+        android:layout_marginHorizontal="@dimen/gap_20"
+        android:text="Forget Password?"
+        android:textSize="@dimen/text_size_14"
+        android:layout_gravity="end"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/gap_30"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/registerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_5dp"
+            android:text="Register"
+            android:textColor="@color/colorBlueLight"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+</LinearLayout>

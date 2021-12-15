@@ -1,0 +1,151 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.note.order.ui.home.SetupFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <!-- Profile-->
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:paddingBottom="5dp"
+          >
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="55dp"
+               android:background="@color/colorPrimary"
+               />
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="80dp"
+               android:layout_alignParentBottom="true"
+               android:layout_marginHorizontal="10dp"
+               android:layout_marginBottom="5dp"
+               app:cardCornerRadius="10dp"
+               app:cardElevation="10dp"
+               android:outlineAmbientShadowColor="@android:color/black"
+               >
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="horizontal">
+
+                   <RelativeLayout
+                       android:layout_width="100dp"
+                       android:layout_height="match_parent">
+
+                       <de.hdodenhof.circleimageview.CircleImageView
+                           android:id="@+id/ivUserProfile"
+                           android:layout_width="60dp"
+                           android:layout_height="60dp"
+                           android:layout_centerVertical="true"
+                           android:layout_marginHorizontal="10dp"
+                           android:src="@drawable/ic_default_profile"
+                           />
+
+                       <ImageView
+                           android:id="@+id/ivChangeProfile"
+                           android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:layout_alignParentBottom="true"
+                           android:src="@drawable/ic_camera_blue"
+                           android:layout_alignParentEnd="true"
+                           android:layout_marginBottom="10dp"
+                           android:layout_marginEnd="25dp"/>
+                   </RelativeLayout>
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_marginEnd="10dp"
+                       android:layout_gravity="center_vertical"
+                       >
+
+                       <TextView
+                           android:id="@+id/tvUserName"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Sai"
+                           android:textSize="14sp"
+                           android:textColor="@android:color/black"
+                           />
+
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal"
+                           android:layout_below="@+id/tvUserName"
+                           >
+
+                           <TextView
+                               android:id="@+id/tvUserPhone"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="09793105605"
+                               android:textSize="14sp"
+                               android:textColor="@android:color/black"
+                               android:layout_marginVertical="5dp"
+                               />
+
+                           <ImageView
+                               android:id="@+id/ivShowHidePhone"
+                               android:layout_width="18dp"
+                               android:layout_height="18dp"
+                               android:src="@drawable/ic_show_eye_grey"
+                               android:layout_marginHorizontal="15dp"
+                               android:layout_toEndOf="@+id/tvUserPhone"
+                               android:layout_centerVertical="true"
+                               android:visibility="gone"
+                               />
+
+                       </RelativeLayout>
+
+                       <ImageView
+                           android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:src="@drawable/ic_my_into"
+                           android:layout_alignParentEnd="true"
+                           android:scaleType="centerCrop"
+                           android:layout_centerVertical="true"
+                           />
+
+                   </RelativeLayout>
+
+               </LinearLayout>
+
+           </androidx.cardview.widget.CardView>
+
+       </RelativeLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           >
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/rvSetup"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+               app:spanCount="2"
+               tools:itemCount="5"
+               tools:listitem="@layout/rc_adapter_setup_list_item"
+               android:layout_marginHorizontal="5dp"
+               android:layout_marginBottom="5dp"
+               />
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

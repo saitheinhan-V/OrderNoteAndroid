@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1C8CFC</color>
+    <color name="colorPrimaryDark">#1C8CFC</color>
+    <color name="colorAccent">#6082EC</color>
+    <color name="colorLightPink">#018786</color>
+
+    <color name="colorBlueLight">#6082EC</color>
+
+    <color name="lightBlack">#3B4754</color>
+    <color name="primaryBackLight">#1F2833</color>
+
+    <color name="bgGrayLight">#EAEAEA</color>
+    <color name="colorGray">#707070</color>
+
+    <color name="colorSecondaryVariant">#018786</color>
+    <color name="colorRed">#EF2631</color>
+    <color name="color_divided">#e8e8e8</color>
+
+
+    <color name="colorBlue">#327EEF</color>
+    <color name="colorYellow">#D3950C</color>
+    <color name="textGray">#777777</color>
+    <color name="textYellow">#F3B421</color>
+    <color name="promotionColor">#D3191A</color>
+
+    <color name="active_dots">#F55B7F</color>
+    <color name="non_active_dots">#BDBDBD</color>
+
+    //Background Color
+    <color name="bgNotification">#FBECF4</color>
+    <color name="bgTranslucent">#66333333</color>
+    <color name="transparent">#00000000</color>
+    <color name="landingDividerColor">#dddddd</color>
+    <color name="greyBackground">#F3F3F3</color>
+    <color name="white">#ffffff</color>
+
+    <!--text colors-->
+    <color name="default_text_color">#989898</color>
+    <color name="text_color_black">#282828</color>
+    <color name="cart_count_background">#EF2631</color>
+    <color name="text_color_blue">#327EEF</color>
+
+    <!--others-->
+    <color name="orderDividerColor">#f4f4f4</color>
+    <color name="orderBorderColor">#BDBDBD</color>
+    <color name="darkYellowColor">#D3950B</color>
+    <color name="goldColor">#FFD700</color>
+    <color name="payment_fail_color">#CD2525</color>
+    <color name="divider_view">#eaeaea</color>
+    <color name="border_gray">#9E9E9E</color>
+    <color name="colorTransparent">#00000000</color>
+
+
+
+</resources>

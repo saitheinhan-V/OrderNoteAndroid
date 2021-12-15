@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gap_2">2dp</dimen>
+    <dimen name="gap_4">4dp</dimen>
+    <dimen name="gap_5">5dp</dimen>
+    <dimen name="gap_6">6dp</dimen>
+    <dimen name="gap_8">8dp</dimen>
+    <dimen name="gap_10">10dp</dimen>
+    <dimen name="gap_12">12dp</dimen>
+    <dimen name="gap_13">13dp</dimen>
+    <dimen name="gap_14">14dp</dimen>
+    <dimen name="gap_15">15dp</dimen>
+    <dimen name="gap_16">16dp</dimen>
+    <dimen name="gap_20">20dp</dimen>
+    <dimen name="gap_24">24dp</dimen>
+    <dimen name="gap_25">25dp</dimen>
+    <dimen name="gap_30">30dp</dimen>
+    <dimen name="gap_32">32dp</dimen>
+    <dimen name="gap_35">35dp</dimen>
+    <dimen name="gap_40">40dp</dimen>
+    <dimen name="gap_45">45dp</dimen>
+    <dimen name="gap_50">50dp</dimen>
+    <dimen name="gap_55">55dp</dimen>
+    <dimen name="gap_60">60dp</dimen>
+    <dimen name="gap_65">65dp</dimen>
+    <dimen name="gap_70">70dp</dimen>
+    <dimen name="gap_80">80dp</dimen>
+    <dimen name="gap_100">100dp</dimen>
+    <dimen name="gap_150">150dp</dimen>
+    <dimen name="gap_240">240dp</dimen>
+    <dimen name="gap_250">250dp</dimen>
+    <dimen name="gap_200">200dp</dimen>
+    <dimen name="gap_300">300dp</dimen>
+
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_19">19sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+
+    <dimen name="text_header">16sp</dimen>
+    <dimen name="text_body">14sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+
+    <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="layout_height_Button">60dp</dimen>
+    <dimen name="layout_height_EditText">55dp</dimen>
+
+    <dimen name="bottom_nav_size">56dp</dimen>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_setup"
+    app:startDestination="@id/colorFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/colorFragment"
+        tools:layout="@layout/fragment_color_setup"
+        android:name="com.note.order.ui.setup.ColorSetupFragment"
+        />
+
+    <fragment
+        android:id="@+id/brandFragment"
+        tools:layout="@layout/fragment_brand_setup"
+        android:name="com.note.order.ui.setup.BrandSetupFragment"
+        />
+
+</navigation>

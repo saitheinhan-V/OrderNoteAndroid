@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.note.order.ui.home.HomeFragment"
+    android:orientation="vertical">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:background="@color/colorPrimary"
+       >
+       
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@android:color/white"
+           android:textSize="18sp"
+           android:text="Orders"
+           android:layout_marginHorizontal="15dp"
+           android:layout_centerVertical="true"
+           />
+       
+       <ImageView
+           android:id="@+id/ivFilter"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:src="@drawable/ic_filter_white"
+           android:layout_alignParentEnd="true"
+           android:layout_marginHorizontal="15dp"
+           android:layout_centerVertical="true"
+           />
+       
+   </RelativeLayout>
+    
+    <!-- Filter -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        
+    </LinearLayout>
+    
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            >
+            
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            
+        </LinearLayout>
+        
+    </androidx.core.widget.NestedScrollView>
+    
+
+</LinearLayout>

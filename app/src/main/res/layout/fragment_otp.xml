@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.account.OtpFragment"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="@dimen/gap_45"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="@dimen/gap_10"
+        android:paddingVertical="8dp"
+        android:src="@drawable/icon_back_white"
+        app:tint="@color/colorGray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_80"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/gap_50"
+            android:layout_weight="1"
+            android:text="*** Please check verification code ***"
+            android:textColor="@color/text_color_black"
+            android:textSize="15sp" />
+
+        <com.mukesh.OtpView
+            android:id="@+id/otpView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:itemBackground="@color/color_divided"
+            android:textColor="@color/colorPrimary"
+            app:cursorColor="@color/colorGray"
+            app:itemCount="6"
+            app:itemSpacing="10dp"
+            app:lineColor="@color/colorPrimary"
+            app:viewType="line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_50"
+            android:layout_marginHorizontal="@dimen/gap_20"
+            android:layout_marginTop="@dimen/gap_50"
+            android:elevation="7dp">
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_enabled"
+                android:text="Confirm"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

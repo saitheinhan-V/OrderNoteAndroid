@@ -1,0 +1,39 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="otpViewStyle">@style/OtpWidget.OtpView</item>
+
+    </style>
+
+    <style name="MyDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="theme_button" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="mandatory_button" parent="theme_button">
+        <item name="android:enabled">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="background">@drawable/button</item>
+        <item name="android:textColor">@color/button_selector</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeWidth">0.3dp</item>
+        <item name="boxStrokeColor">@color/colorGray</item>
+        <item name="hintTextColor">@color/colorGray</item>
+        <item name="android:textColorHint">@color/colorGray</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="background">@color/white</item>
+    </style>
+
+</resources>
