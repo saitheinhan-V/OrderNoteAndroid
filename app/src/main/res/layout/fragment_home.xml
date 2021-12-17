@@ -21,6 +21,16 @@
            android:layout_marginHorizontal="15dp"
            android:layout_centerVertical="true"
            />
+
+       <ImageView
+           android:id="@+id/ivAdd"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:src="@drawable/ic_add_white"
+           android:layout_marginHorizontal="15dp"
+           android:layout_centerVertical="true"
+           android:layout_toStartOf="@+id/ivFilter"
+           />
        
        <ImageView
            android:id="@+id/ivFilter"
@@ -50,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:paddingHorizontal="10dp"
+            android:paddingHorizontal="5dp"
             android:paddingVertical="10dp"
             >
             
@@ -58,6 +68,10 @@
                 android:id="@+id/rvOrder"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                tools:itemCount="5"
+                tools:listitem="@layout/row_order_history_list"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="vertical"
                 />
             
         </LinearLayout>

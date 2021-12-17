@@ -51,6 +51,8 @@
     <color name="border_gray">#9E9E9E</color>
     <color name="colorTransparent">#00000000</color>
 
+    <color name="colorStepper">#1ABBF0</color>
+
 
 
 </resources>

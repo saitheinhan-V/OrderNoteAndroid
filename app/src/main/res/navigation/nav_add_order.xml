@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_add_order"
+    app:startDestination="@id/step_1_dest">
+
+    <fragment
+        android:id="@+id/step_1_dest"
+        android:name="com.note.order.ui.order.step.StepOneFragment"
+        android:label="Step 1" />
+
+    <fragment
+        android:id="@+id/step_2_dest"
+        android:name="com.note.order.ui.order.step.StepTwoFragment"
+        android:label="Step 2" />
+
+
+</navigation>

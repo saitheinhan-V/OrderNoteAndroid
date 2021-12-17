@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.order.AddOrderFragment"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gap_150"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_100"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gap_45"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/icon_back_white"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tvStepName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="@dimen/gap_10"
+                    android:layout_toEndOf="@+id/ivBack"
+                    android:text="Step1"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvNextStep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="15dp"
+                    android:text="NEXT"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/gap_10"
+            android:layout_marginBottom="@dimen/gap_10"
+            app:cardCornerRadius="@dimen/gap_5"
+            android:outlineAmbientShadowColor="@color/colorGray"
+            android:outlineSpotShadowColor="@color/colorGray"
+            app:cardElevation="3dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="5"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            >
+
+                            <ImageView
+                                android:id="@+id/ivStepOne"
+                                android:layout_width="@dimen/gap_30"
+                                android:layout_height="@dimen/gap_30"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/step_one_selected" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:id="@+id/ivStepLineOneTwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:layout_toStartOf="@+id/ivStepTwo"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/stepper_line_unselected"
+                                />
+
+                            <ImageView
+                                android:id="@+id/ivStepTwo"
+                                android:layout_width="@dimen/gap_30"
+                                android:layout_height="@dimen/gap_30"
+                                android:src="@drawable/step_two_unselected"
+                                android:layout_centerInParent="true"
+                                />
+
+                            <ImageView
+                                android:id="@+id/ivStepLineTwoThree"
+                                android:layout_width="match_parent"
+                                android:layout_height="3dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toEndOf="@+id/ivStepTwo"
+                                android:layout_alignParentEnd="true"
+                                android:background="@drawable/stepper_line_unselected"
+                                />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            >
+
+                            <ImageView
+                                android:id="@+id/ivStepThree"
+                                android:layout_width="@dimen/gap_30"
+                                android:layout_height="@dimen/gap_30"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/step_three_unselected" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3"
+                        android:layout_marginTop="@dimen/gap_5"
+                        >
+
+                        <TextView
+                            android:id="@+id/tvStepOne"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Customer Info"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvStepTwo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Delivery Info"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvStepThree"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Product Info"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/customerInfoLayout"
+                layout="@layout/layout_customer_info"
+                />
+
+            <include
+                android:id="@+id/deliveryInfoLayout"
+                layout="@layout/layout_delivery_info"
+                android:visibility="gone"
+                />
+
+            <include
+                android:id="@+id/productInfoLayout"
+                layout="@layout/layout_customer_info"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

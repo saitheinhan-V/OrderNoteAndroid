@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="@dimen/gap_10">
+
+    <!--Delivery Entry-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--Order Type-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_40"
+            android:background="@drawable/textview_rounded_border_grey_background"
+            android:orientation="horizontal"
+            android:layout_marginVertical="@dimen/gap_5"
+            >
+
+            <ImageView
+                android:id="@+id/ivOrderType"
+                android:layout_width="@dimen/gap_25"
+                android:layout_height="@dimen/gap_25"
+                android:src="@drawable/ic_dollar"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/gap_10"
+                android:layout_marginEnd="@dimen/gap_5"
+                />
+
+            <TextView
+                android:id="@+id/tvOrderType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please Choose Order Type"
+                android:drawableEnd="@drawable/ic_expand_down"
+                android:drawablePadding="@dimen/gap_5"
+                android:layout_gravity="center_vertical"
+                android:paddingHorizontal="@dimen/gap_5"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </LinearLayout>
+
+        <!--Payment Type-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_40"
+            android:background="@drawable/textview_rounded_border_grey_background"
+            android:orientation="horizontal"
+            android:layout_marginVertical="@dimen/gap_5"
+            >
+
+            <ImageView
+                android:id="@+id/ivPaymentType"
+                android:layout_width="@dimen/gap_25"
+                android:layout_height="@dimen/gap_25"
+                android:src="@drawable/ic_dollar"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/gap_10"
+                android:layout_marginEnd="@dimen/gap_5"
+                />
+
+            <TextView
+                android:id="@+id/tvPaymentType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please Choose Payment Type"
+                android:drawableEnd="@drawable/ic_expand_down"
+                android:drawablePadding="@dimen/gap_5"
+                android:layout_gravity="center_vertical"
+                android:paddingHorizontal="@dimen/gap_5"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </LinearLayout>
+
+        <!--Order Date-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginVertical="@dimen/gap_5"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="Order Date : "
+                android:layout_gravity="center_vertical"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/gap_40"
+                android:layout_weight="1.3"
+                android:background="@drawable/textview_rounded_border_grey_background"
+                >
+
+                <TextView
+                    android:id="@+id/tvOrderDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order Date"
+                    android:layout_gravity="center_vertical"
+                    android:drawableEnd="@drawable/ic__next_grey"
+                    android:drawablePadding="@dimen/gap_5"
+                    android:layout_marginHorizontal="@dimen/gap_5"
+                    android:paddingStart="@dimen/gap_5"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--DeadLine Date-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginVertical="@dimen/gap_5"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="Sending Date : "
+                android:layout_gravity="center_vertical"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/gap_40"
+                android:layout_weight="1.3"
+                android:background="@drawable/textview_rounded_border_grey_background"
+                >
+
+                <TextView
+                    android:id="@+id/tvDeadlineDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sending Date"
+                    android:layout_gravity="center_vertical"
+                    android:drawableEnd="@drawable/ic__next_grey"
+                    android:drawablePadding="@dimen/gap_5"
+                    android:layout_marginHorizontal="@dimen/gap_5"
+                    android:paddingStart="@dimen/gap_5"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

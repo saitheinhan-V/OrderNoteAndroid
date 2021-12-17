@@ -1,5 +1,6 @@
 package com.note.order.ui.account
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -11,6 +12,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
+import com.note.order.MainActivity
 import com.note.order.R
 import com.note.order.request.LoginRequest
 import com.note.order.response.AccountResponse
@@ -41,6 +43,11 @@ class LoginFragment : Fragment() {
     @DelicateCoroutinesApi
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        tvSkip.setOnClickListener {
+            startActivity(Intent(requireContext(),MainActivity::class.java))
+            activity?.finish()
+        }
 
         btnLogin.setSafeOnClickListener {
             if(isPhone && isPassword){

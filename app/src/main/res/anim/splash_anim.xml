@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:duration="300">
+
+
+    <!--THIS CODE IS FOR SIDE ANIMATION-->
+    <!--        <translate-->
+    <!--            android:duration="1500"-->
+    <!--            android:fromXDelta="-50%"-->
+    <!--            android:fromYDelta="0%"-->
+    <!--            android:interpolator="@android:anim/accelerate_interpolator"/>//-50%-->
+
+    <alpha
+        android:fromAlpha="0.1"
+        android:toAlpha="1.0"
+        android:startOffset="300"/>
+
+    <scale android:pivotX="50%"
+        android:pivotY="50%"
+        android:fromYScale="0"
+        android:fromXScale="0"
+        android:toXScale="1.5"
+        android:toYScale="1.5"
+        android:startOffset="300"
+        android:interpolator="@android:anim/cycle_interpolator"/>
+
+</set>
