@@ -24,6 +24,7 @@
                />
 
            <androidx.cardview.widget.CardView
+               android:id="@+id/userCardView"
                android:layout_width="match_parent"
                android:layout_height="80dp"
                android:layout_alignParentBottom="true"

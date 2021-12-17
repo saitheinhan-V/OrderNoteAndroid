@@ -33,6 +33,30 @@
         <entry key="..\:/A-remote/LearnTai/app/src/main/res/layout/rc_adapter_setup_list_item.xml" value="0.25" />
         <entry key="..\:/A-remote/LearnTai/app/src/main/res/layout/row_order_history_list.xml" value="0.33" />
         <entry key="..\:/A-remote/LearnTai/app/src/main/res/menu/main_menu.xml" value="0.34167517875383047" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/drawable/button.xml" value="0.36875" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/drawable/horizontal_dash_line.xml" value="0.36875" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/drawable/ic_yellow_dollar_sign.xml" value="0.36875" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/drawable/stepper_line_selected.xml" value="0.36875" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/drawable/stepper_line_unselected.xml" value="0.36875" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/drawable/textview_rounded_border_grey_background.xml" value="0.36875" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/layout/activity_add_order.xml" value="0.3484375" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/layout/activity_main.xml" value="0.3484375" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/layout/activity_setting.xml" value="0.3484375" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/layout/activity_start.xml" value="0.3307291666666667" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/layout/fragment_add_order.xml" value="0.33" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/layout/fragment_home.xml" value="0.3484375" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/layout/fragment_login.xml" value="0.3484375" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/layout/fragment_password.xml" value="0.3484375" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/layout/fragment_register.xml" value="0.3484375" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/layout/fragment_setup.xml" value="0.3484375" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/layout/fragment_step_one.xml" value="0.3484375" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/layout/fragment_step_two.xml" value="0.3484375" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/layout/layout_back.xml" value="0.3484375" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/layout/layout_customer_info.xml" value="0.3484375" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/layout/layout_delivery_info.xml" value="0.3484375" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/layout/layout_product_info.xml" value="0.3484375" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/layout/row_order_history_list.xml" value="0.3484375" />
+        <entry key="..\:/A-remote/OrderNote/app/src/main/res/menu/menu_add_order.xml" value="0.3484375" />
       </map>
     </option>
   </component>

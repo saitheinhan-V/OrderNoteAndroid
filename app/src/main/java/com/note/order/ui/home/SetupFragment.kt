@@ -10,7 +10,9 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.note.order.R
 import com.note.order.adapter.SetupAdapter
 import com.note.order.entity.SetupItems
+import com.note.order.ui.setting.SettingActivity
 import com.note.order.ui.setup.SetupActivity
+import com.note.order.utils.setSafeOnClickListener
 import kotlinx.android.synthetic.main.fragment_setup.*
 
 class SetupFragment : Fragment() , SetupAdapter.ItemClickListener {
@@ -41,6 +43,12 @@ class SetupFragment : Fragment() , SetupAdapter.ItemClickListener {
         rvSetup.adapter = SetupAdapter(setupItemList,this)
         rvSetup.setHasFixedSize(true)
         rvSetup.layoutManager = GridLayoutManager(activity,2)
+
+        userCardView.setSafeOnClickListener {
+            val intent = Intent(requireContext(),SettingActivity::class.java)
+            intent.putExtra("route",1)
+            startActivity(intent)
+        }
     }
 
 

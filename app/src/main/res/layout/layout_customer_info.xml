@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="@dimen/gap_10">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Input Customer Info"
+        android:textSize="15sp"
+        android:layout_marginVertical="@dimen/gap_5"
+        android:visibility="gone"
+        />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleButtonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        android:weightSum="2"
+        >
+        <!--app:checkedButton="@+id/toggleNewCustomer"-->
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/toggleNewCustomer"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/gap_50"
+            android:text="New"
+            android:layout_weight="1"
+            android:enabled="true"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/toggleOldCustomer"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/gap_50"
+            android:text="Old"
+            android:layout_weight="1"/>
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <!-- New Customer Entry -->
+    <LinearLayout
+        android:id="@+id/layoutNewCustomerEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameTxtInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/TextInputLayoutStyle"
+            android:paddingVertical="@dimen/padding_5dp"
+            android:backgroundTint="@color/transparent"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtNewCustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gap_55"
+                android:hint="Name"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_16"
+                android:imeOptions="actionDone"
+                android:nextFocusDown="@id/phoneTxtInputLayout"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phoneTxtInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/TextInputLayoutStyle"
+            android:paddingVertical="@dimen/padding_5dp"
+            android:backgroundTint="@color/transparent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/gap_55"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_16"
+                android:imeOptions="actionDone"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggleGenderGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            android:weightSum="2"
+            >
+            <!--app:checkedButton="@+id/toggleNewCustomer"-->
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/toggleMale"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/gap_50"
+                android:text="Male"
+                android:layout_weight="1"
+                android:enabled="true"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/toggleFemale"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/gap_50"
+                android:text="Female"
+                android:layout_weight="1"/>
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_40"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_marginVertical="@dimen/gap_5"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/gap_40"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/textview_rounded_border_grey_background"
+                >
+
+                <TextView
+                    android:id="@+id/tvState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="State/Division"
+                    android:layout_gravity="center_vertical"
+                    android:drawableEnd="@drawable/ic_expand_down"
+                    android:drawablePadding="@dimen/gap_5"
+                    android:layout_marginHorizontal="@dimen/gap_5"
+                    android:paddingStart="@dimen/gap_5"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/gap_40"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/textview_rounded_border_grey_background"
+                >
+
+                <TextView
+                    android:id="@+id/tvCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="City/Township"
+                    android:layout_gravity="center_vertical"
+                    android:drawableEnd="@drawable/ic_expand_down"
+                    android:drawablePadding="@dimen/gap_5"
+                    android:layout_marginHorizontal="@dimen/gap_5"
+                    android:paddingStart="@dimen/gap_5"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_100"
+            android:layout_marginVertical="@dimen/gap_5"
+            android:background="@drawable/textview_rounded_border_grey_background"
+            >
+
+            <EditText
+                android:id="@+id/tvAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address Details..."
+                android:background="@color/transparent"
+                android:paddingHorizontal="@dimen/gap_8"
+                android:paddingVertical="@dimen/gap_5"
+                android:textSize="15sp"
+                android:maxLines="5"
+                android:maxLength="200"
+                android:justificationMode="inter_word"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

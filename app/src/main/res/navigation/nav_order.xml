@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_order"
+    app:startDestination="@id/addOrderFragment">
+
+    <fragment
+        android:id="@+id/addOrderFragment"
+        tools:layout="@layout/fragment_add_order"
+        android:name="com.note.order.ui.order.AddOrderFragment"
+        >
+        <action
+            android:id="@+id/action_addOrderFragment_to_orderDetailFragment"
+            app:destination="@id/orderDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/orderDetailFragment"
+        android:name="com.note.order.ui.order.OrderDetailFragment"
+        tools:layout="@layout/fragment_order_detail"
+        />
+
+</navigation>
